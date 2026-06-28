@@ -1,80 +1,87 @@
-# Monte Carlo Laser-Based Robot Localization
-
-<p align="center">
-  <img src="docs/montecarlo-demo.gif" width="750">
-</p>
+# 🚗 Monte Carlo Laser-Based Robot Localization
 
 <p align="center">
 
-Particle Filter (Monte Carlo Localization) implementation developed using the Robotics Academy platform.
+![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)
+![ROS2](https://img.shields.io/badge/ROS2-Humble-22314E?logo=ros)
+![Gazebo](https://img.shields.io/badge/Gazebo-Simulator-orange)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Completed-success)
 
+</p>
+
+<p align="center">
+  <img src="docs/montecarlo-demo.gif" width="800"/>
+</p>
+
+<p align="center">
+Particle Filter (Monte Carlo Localization) implemented using Robotics Academy.
 </p>
 
 ---
 
-# Overview
+## 📖 Overview
 
-This project implements a **Monte Carlo Localization (MCL)** algorithm for estimating the pose of a mobile robot in a known environment.
+This project implements the **Monte Carlo Localization (MCL)** algorithm to estimate the pose of a mobile robot in a known environment using:
 
-The localization process combines:
+- Odometry
+- Laser Scanner
+- Particle Filter
+- Multinomial Resampling
 
-- Odometry-based motion model
-- Laser sensor observation model
-- Particle weighting
-- Multinomial resampling
-- Pose estimation from weighted particles
-
-The implementation was developed as part of the **Introduction to Mobile Robotics** course.
+The implementation was developed for the **Introduction to Mobile Robotics** course at **Federal University of Alagoas (UFAL)**.
 
 ---
 
-# Algorithm Pipeline
+## ⚙️ Algorithm Pipeline
 
-```
-Robot Motion
+```text
+🚗 Robot
       │
       ▼
-Motion Update
+📍 Motion Update
       │
       ▼
-Laser Observation
+📡 Laser Observation
       │
       ▼
-Weight Update
+⚖️ Weight Update
       │
       ▼
-Resampling
+🔄 Resampling
       │
       ▼
-Pose Estimation
+📌 Pose Estimation
 ```
 
 ---
 
-# Features
+## ✨ Features
 
-- Random particle initialization
-- Motion model using odometry
-- Ray Casting simulation
-- Laser likelihood model
-- Weight normalization
-- Multinomial resampling
-- Weighted pose estimation
-- Real-time visualization in Robotics Academy
-
----
-
-# Technologies
-
-- Python 3
-- Robotics Academy
-- ROS 2 Humble
-- Gazebo
-- Docker
+- ✅ Random particle initialization
+- ✅ Motion model using odometry
+- ✅ Ray Casting sensor simulation
+- ✅ Laser likelihood model
+- ✅ Weight normalization
+- ✅ Multinomial resampling
+- ✅ Pose estimation
+- ✅ Real-time particle visualization
 
 ---
 
-# Project Structure
+## 🛠 Technologies
+
+| Technology | Version |
+|------------|---------|
+| Python | 3 |
+| Robotics Academy | Latest |
+| ROS 2 | Humble |
+| Gazebo | Included |
+| Docker | Latest |
+
+---
+
+## 📂 Project Structure
 
 ```text
 .
@@ -86,35 +93,39 @@ Pose Estimation
 
 ---
 
-# Results
+## 📈 Results
 
-The particle cloud gradually converges toward the robot's real position after successive prediction and correction steps.
+The particle cloud converges toward the robot's real position after successive prediction and correction steps.
 
-The estimated pose is continuously computed using the weighted particle distribution.
-
----
-
-# How to Run
-
-1. Install Docker.
-2. Run the Robotics Academy container.
-3. Open the Montecarlo Laser Loc exercise.
-4. Replace the template with `academy.py`.
-5. Run the simulation.
+The estimated pose is continuously computed from the weighted particle distribution.
 
 ---
 
-# Theory
+## ▶️ Running
 
-This implementation follows the Monte Carlo Localization algorithm described in:
+```bash
+1. Install Docker
 
-- Probabilistic Robotics — Sebastian Thrun
-- Chapter 8 – Particle Filters
-- Robotics Academy – Monte Carlo Laser Localization
+2. Start Robotics Academy
+
+3. Open the MonteCarlo Laser Loc exercise
+
+4. Replace the template with academy.py
+
+5. Run the simulation
+```
 
 ---
 
-# Author
+## 📚 References
+
+- Sebastian Thrun, *Probabilistic Robotics*
+- Chapter 8 — Particle Filters
+- Robotics Academy — Monte Carlo Laser Localization
+
+---
+
+## 👩‍💻 Author
 
 **Mariana Lins**
 
