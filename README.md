@@ -1,7 +1,7 @@
 # Monte Carlo Laser-Based Robot Localization
 
 <p align="center">
-  <img src="docs/montecarlo-demo.gif" alt="Monte Carlo Localization Demo" width="700"/>
+  <img src="docs/implementacao.gif" alt="Monte Carlo Localization Demo" width="700"/>
 </p>
 
 ## Overview
